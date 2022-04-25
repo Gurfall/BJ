@@ -111,8 +111,7 @@ private:
 		a = b;
 		b = temp;
 	}
-
-	// Генерируем случайное число между min и max (включительно).
+	
 	int getRandomNumber(int min, int max)
 	{
 		static const double fraction = 1.0 / (static_cast<double>(RAND_MAX) + 1.0);
@@ -124,7 +123,7 @@ public:
 	{
 		for (int index = 0; index < 52; ++index)
 		{
-			// Выбираем любую случайную карту
+			// Г‚Е±ГЎДЌД‘Е•ДєД› Г«ЕЈГЎГіЕЈ Е„Г«ГіГ·Е•Г©Г­ГіЕЈ Д™Е•Д‘Е€Гі
 			int swapIndex = getRandomNumber(0, 51);
 
 			swapCard(m_deck[index], m_deck[swapIndex]);
